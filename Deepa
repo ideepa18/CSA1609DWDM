@@ -1,0 +1,20 @@
+ #min-maz normalization
+data<- c(10, 20, 30, 40, 50)
+min_max<- (data - min(data)) / (max(data) - min(data))
+print(min_max)
+
+#histogram
+m<-c(2,3,4,5,6,7,8)
+hist(m,xlab = "Hinata",col = "gold")
+ 
+ #odd-even i/p from user
+num <-as.integer(readline(prompt ="enter the number::"))
+if (num %% 2 == 0) {
+  cat(num, "is even\n")
+} else {
+  cat(num,"is odd\n")
+}
+
+#z-score normalization
+s=c(2,3,4,5,6,7,8)
+print(s-mean(s)/sd(s))
